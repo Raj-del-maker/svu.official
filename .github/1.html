@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >REGISTER FORM</title>
+    <STYLE TYPE="TEXT/CSS">
+        .CENTERIMAGE{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            mix-blend-mode: darken; 
+        } 
+        *{
+            text-decoration: none;
+            box-sizing: border-box;
+            
+        }
+        .navbar{
+            background: crimson;font-family: calibri;padding-right: 15px;padding-left: 15px;
+        }
+        .navdiv{
+            display: flex;align-items: center;justify-content: space-between;
+        }
+        .logo a{
+            font-size:35px;font-weight: 600;color: rgb(246, 246, 244);
+        }
+        li{
+            list-style: none;display: inline-block;
+        }
+        li a{
+            color: white;font-size: 18px;font-weight: bold;margin-right: 25px;
+        }
+        button{
+            background-color: skyblue; height:35px;margin:5px 0px;padding: 10px;width: 90px ;border:none;border-radius: 5px;color: #333;
+        }
+    </STYLE>
+    
+</head>
+<BODY  background="E:\white bg for form.jpeg"  WIDTH="120">
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">WWW. SVU. COM</a></div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <button><a href="#">SIGN IN</a></button>
+                <button><a href="#">SIGN UP</a></button>
+            </ul>
+        </div>
+    </nav>
+<h1><center><FONT FACE="ALGERIAN">STUDENT REGISTRATION FORM 2024</FONT></center></h1>
+    <img src="E:\svu logo.png" CLASS="CENTERIMAGE" width="125" height="125">
+    <BR>
+    <form action="SERVER.PHP" METHOD="post" enctype="multipart/form-data" NAME="MY FORM">
+    <form NAME="MY FORM" >
+        <TABLE  cellspacing="5" cellpadding="5" align="center">
+            <TR>
+                <TD><B> FIRST NAME:</B></TD>
+                <TD> <INPUT TYPE="TEXT" NAME="FNAME"  SIZE="29" placeholder="Enter your first name"></TD>
+            </TR>
+            <TR>
+                <TD> <B>LAST NAME:</B></TD>
+                <TD><INPUT TYPE="TEXT" NAME="LNAME" SIZE="29" placeholder="Enter your last name"></TD>
+            </TR>
+            <TR>
+                <TD><B>GUARDIAN'S NAME:</B></TD>
+                <TD> <INPUT TYPE="TEXT" NAME="GNAME" SIZE="29" placeholder="Enter your guardian's name"></TD>
+            </TR>
+            <TR>
+                <TD><B>MOBILE NO:</B></TD>
+                <TD> <INPUT TYPE="TEXT" NAME="MN" SIZE="29" placeholder="Enter your mobile number"></TD>
+            </TR>
+            <TR>
+                <TD><B> DATE OF BIRTH :</B></TD>
+                <TD> <INPUT TYPE="DATE" NAME="DATE" SIZE="29" ></TD>
+            </TR>
+            <TR>
+                <TD><B>EMAIL:</B></TD>
+                <TD><INPUT TYPE="email" NAME="email" PLACEHOLDER="Enter your email-id"SIZE="29"></TD>
+            </TR>
+            <tr>
+                <td> <B>GENDER:</B></td>
+                <TD><INPUT TYPE="radio" NAME="GENDER">MALE<INPUT TYPE="RADIO" NAME="GENDER">FEMALE<input type="radio" name="GENDER">OTHERS</TD>
+            </tr>
+            <TR>
+                <TD><B>CHOOSE &nbsp;COURSE:</B></TD>
+                <td><select name="course" >
+                    <option name="select">--------------------------select------------------------</option>
+                    <option name="BBA">(BBA)Bachelors in business addministrative</option>
+                    <OPTION NAME="BCA">(BCA)Bachelors in computer applications</OPTION>
+                    <option NAME="B.TECH">(B.TECH)Bachelors in computer science</option>
+                    <OPTION NAME="BHM">(BHM)bachelors in hospital management </OPTION>
+                    <option NAME=""></option>
+                </select></td>
+            </TR>
+            <TR>
+                <TD><B>BLOOD GROUP:</B></TD>
+                <TD><INPUT TYPE="radio" name="BG">A+<INPUT TYPE="RADIO" NAME="BG">A-<INPUT TYPE="RADIO" NAME="BG">B+<INPUT TYPE="RADIO" NAME="BG">B-<INPUT TYPE="RADIO" NAME="BG">O+<INPUT TYPE="RADIO" NAME="BG">O-</TD>
+            </TR>
+            <TR>
+                <TD><B>
+                    HOBBIES:
+                    </B>
+                </TD>
+                <TD><INPUT TYPE="CHECKBOX" NAME="GRADE" SIZE="">CRICKET<INPUT TYPE="CHECKBOX" NAME="GRADE" SIZE="">DRAWING<INPUT TYPE="CHECKBOX" NAME="GRADE">SINGING<INPUT TYPE="CHECKBOX" NAME="GRADE">FOOTBALL<INPUT TYPE="CHECKBOX" NAME="GRADE">GARDENING</TD>
+            </TR>
+            <TR>
+                <TD><B>ADDRESS:</B></TD>
+                <TD><textarea NAME="ADDRESS"></textarea></TD>
+            </TR>
+            <TR>
+                <TD><B>UPLOAD HS MARKSHEET:</B></TD>
+                <TD><INPUT TYPE="FILE" NAME="MARKSHEET"></TD>
+            </TR>
+            <TR>
+              <TD></TD>  <TD><button>submit</button></TD> 
+             </TR> 
+             
+        </TABLE>
+    </form>
+    <marquee><b>FILL&nbsp; THE&nbsp; FORM &nbsp;IN&nbsp; BLOCK &nbsp;LETTERS &nbsp;CAREFULLY&nbsp;</b></marquee>
+</body>
+</html>
